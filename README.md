@@ -66,6 +66,23 @@ Real audit reports of 5 sites shipped with this skill — see [`examples/`](./ex
 
 See [CHANGELOG.md](./CHANGELOG.md).
 
+
+## Пример результата (баттлтест)
+
+**5 сайтов РФ, реальный скоринг:**
+
+| Сайт | Score | Grade | Главный gap |
+|---|---|---|---|
+| Skyeng | 75 | B | Нет entity schema |
+| Лёгкая Стоматология | 74 | B- | Нет sameAs |
+| OldBoy | 68 | C+ | Нет llms.txt |
+| ИНКОМ | 66 | C+ | Нет dateModified |
+| Кофемания | 61 | C | Нет answer-first |
+
+> Полный баттлтест: [`examples/geo-battle-results.json`](./examples/geo-battle-results.json) · [`examples/geo-battle-report.html`](./examples/geo-battle-report.html)
+
+**Бесплатный аудит вашего сайта →** [t.me/discoverysystem](https://t.me/discoverysystem) · [discovery-system.ru](https://discovery-system.ru)
+
 ## License
 
 MIT — free to use, modify, distribute. Attribution appreciated.
