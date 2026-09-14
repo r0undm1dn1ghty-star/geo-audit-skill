@@ -1,7 +1,24 @@
-# GEO-Audit Skill — AEO + GEO for AI Search (2026)
+# GEO-аудит: увидит ли ChatGPT твой сайт
+
+Если ChatGPT, Perplexity и Gemini не цитируют твой сайт — ты теряешь клиентов. Этот скилл проверяет 92 правила и даёт score 0-100 за 10 минут.
+
+![MIT License](https://img.shields.io/badge/license-MIT-blue) ![v1.3.0](https://img.shields.io/badge/version-1.3.0-green) ![92 rules](https://img.shields.io/badge/rules-92-orange)
+
+## Quick Start
+
+1. Скачай репо
+2. Скопируй `SKILL.md` в Claude Code / Hermes
+3. Запусти: `аудит <твой-сайт>`
+4. Получи score 0-100 + action plan
+
+> Бесплатный аудит → [t.me/discoverysystem](https://t.me/discoverysystem)
+
+---
+
+## GEO-Audit Skill — AEO + GEO for AI Search (2026)
 
 > **GEO-SEO Audit Skill** by Victor Zaitsev / Discovery System
-> 
+>
 > The most comprehensive open-source AEO + GEO audit methodology for AI search visibility — 92 linter rules, 6 intelligence dimensions, 7 AI search engine spec sheets, 22 research-backed data points, framework-specific fix patterns, and a full execution pipeline.
 
 ## What this does
@@ -26,6 +43,13 @@ Final Score = 50% Foundational (92 rules) + 50% Intelligence (6 dimensions)
 → Grade: A+ (95-100) · A (90-94) · B+ (80-84) · ... · F (<40)
 ```
 
+## Examples
+
+Real audit reports of 5 sites shipped with this skill — see [`examples/`](./examples/):
+
+- `geo-battle-report.html` — rendered battle report
+- `geo-battle-results.json` — structured results
+
 ## Research references
 
 | Claim | Source |
@@ -38,12 +62,39 @@ Final Score = 50% Foundational (92 rules) + 50% Intelligence (6 dimensions)
 | Perplexity citation rate = 97% | AuthorityTech, 2026 |
 | ChatGPT citation rate = 16% | ThatDevPro, 2026 |
 
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md).
+
 ## License
 
 MIT — free to use, modify, distribute. Attribution appreciated.
 
 ## Author
 
-**Victor Zaitsev** — Discovery System  
-- Telegram: [@discoverysystem](https://t.me/discoverysystem)  
+**Victor Zaitsev** — Discovery System
+- Telegram: [@discoverysystem](https://t.me/discoverysystem)
 - GitHub: [r0undm1dn1ghty-star](https://github.com/r0undm1dn1ghty-star)
+
+<!-- JSON-LD: structured data for AI crawlers -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "GEO Audit Skill",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Cross-platform",
+  "softwareVersion": "1.3.0",
+  "description": "GEO-аудит для AI-поиска: 92 правила, score 0-100, 7 AI-движков. Проверяет, увидит ли ChatGPT, Perplexity и Gemini твой сайт.",
+  "license": "https://opensource.org/license/mit",
+  "author": {
+    "@type": "Person",
+    "name": "Victor Zaitsev",
+    "url": "https://t.me/discoverysystem",
+    "sameAs": [
+      "https://github.com/r0undm1dn1ghty-star",
+      "https://t.me/discoverysystem"
+    ]
+  }
+}
+</script>

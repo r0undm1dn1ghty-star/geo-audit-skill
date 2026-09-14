@@ -1,0 +1,14 @@
+# GEO Audit Skill
+
+> GEO-аудит для AI-поиска: 92 правила, score 0-100, 7 AI-движков. Проверяет, увидит ли ChatGPT, Perplexity и Gemini твой сайт.
+
+## Documentation
+
+- [README](./README.md)
+- [SKILL.md](./SKILL.md)
+- [CHANGELOG](./CHANGELOG.md)
+
+## Links
+
+- Telegram: https://t.me/discoverysystem
+- GitHub: https://github.com/r0undm1dn1ghty-star/geo-audit-skill
