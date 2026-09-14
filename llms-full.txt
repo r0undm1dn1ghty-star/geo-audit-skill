@@ -1,0 +1,16 @@
+# GEO Audit Skill
+
+> AEO+GEO SEO audit for AI search visibility. 92 rules, 6 intelligence dimensions, 7 AI engine spec sheets, 22 research data points. MIT.
+
+## Documentation
+- [README](./README.md): RU hero, quick start, 92 rules overview, battle test results
+- [SKILL.md](./SKILL.md): Full methodology — 92 rules, 6 dimensions, scoring 0-100, A-F grade, platform specs
+- [Battle results](./examples/geo-battle-results.json): 5 real RU sites scored
+- [Battle report](./examples/geo-battle-report.html): Client-ready HTML report
+- [CHANGELOG](./CHANGELOG.md): Version history
+- [References](./references/): 6 JSON-LD templates (Organization, Person, Article, LocalBusiness, Product, SaaS)
+
+## Links
+- [GitHub Repository](https://github.com/r0undm1dn1ghty-star/geo-audit-skill)
+- [Discovery System](https://discovery-system.ru)
+- [Telegram](https://t.me/discoverysystem)
