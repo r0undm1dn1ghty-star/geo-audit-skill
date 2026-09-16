@@ -45,10 +45,11 @@ Final Score = 50% Foundational (92 rules) + 50% Intelligence (6 dimensions)
 
 ## Examples
 
-Real audit reports of 5 sites shipped with this skill — see [`examples/`](./examples/):
+Real audit reports shipped with this skill — see [`examples/`](./examples/):
 
-- `geo-battle-report.html` — rendered battle report
-- `geo-battle-results.json` — structured results
+- [`geo-battle-2026-09-16.md`](./examples/geo-battle-2026-09-16.md) — баттлтест 5 сайтов РФ 16.09.2026: метод, таблица scores, 4 паттерна рынка
+- `geo-battle-report.html` — rendered battle report (предыдущий прогон)
+- `geo-battle-results.json` — structured results (предыдущий прогон)
 
 ## Research references
 
@@ -67,19 +68,24 @@ Real audit reports of 5 sites shipped with this skill — see [`examples/`](./ex
 See [CHANGELOG.md](./CHANGELOG.md).
 
 
-## Пример результата (баттлтест)
+## Пример результата (баттлтест 16.09.2026)
 
-**5 сайтов РФ, реальный скоринг:**
+**5 сайтов РФ, реальный скоринг по модели `50% foundational (92 правила) + 50% intelligence (6 измерений)`:**
 
-| Сайт | Score | Grade | Главный gap |
-|---|---|---|---|
-| Skyeng | 75 | B | Нет entity schema |
-| Лёгкая Стоматология | 74 | B- | Нет sameAs |
-| OldBoy | 68 | C+ | Нет llms.txt |
-| ИНКОМ | 66 | C+ | Нет dateModified |
-| Кофемания | 61 | C | Нет answer-first |
+| # | Сайт | Score | Grade | Главный gap |
+|---|---|---|---|---|
+| 1 | discovery-system.ru | **87** | A− | `sameAs` = 2 ссылки, нет sitemap.xml |
+| 2 | skyeng.ru | **81** | B+ | Нет `sameAs` на соцсети в Organization, нет `dateModified` |
+| 3 | oldboybarbershop.com | **64** | C+ | llms.txt = 153 символа (заглушка); нет `sameAs` |
+| 4 | tbank.ru | **58** | C | JSON-LD битый — парсинг падает; llms.txt без секций |
+| 5 | wildberries.ru | **42** | D | **JS-shell**: HTML = 1132 символа; llms.txt подменён robots; 0 JSON-LD |
 
-> Полный баттлтест: [`examples/geo-battle-results.json`](./examples/geo-battle-results.json) · [`examples/geo-battle-report.html`](./examples/geo-battle-report.html)
+**Средний score: 66.4 (C+).** Разброс 42 → 87 различим и интерпретируем; ни один сайт из пятерки не прописал AI-краулеры в robots.txt.
+
+Четыре паттерна, валидных для всего рынка РФ: JS-shell как смертный приговор для AI-поиска, пустой или подменённый llms.txt, JSON-LD без `sameAs`/`dateModified`, и неявный доступ для AI-краулеров.
+
+> Полный баттлтест с методом, измерениями intelligence по каждому сайту и разбором паттернов: [`examples/geo-battle-2026-09-16.md`](./examples/geo-battle-2026-09-16.md)
+> Артефакты прошлого прогона: [`examples/geo-battle-results.json`](./examples/geo-battle-results.json) · [`examples/geo-battle-report.html`](./examples/geo-battle-report.html)
 
 **Бесплатный аудит вашего сайта →** [t.me/discoverysystem](https://t.me/discoverysystem) · [discovery-system.ru](https://discovery-system.ru)
 

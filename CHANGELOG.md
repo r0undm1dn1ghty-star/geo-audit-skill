@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.4.0 — 2026-09-16
+
+- Баттлтест на 5 сайтах РФ: skyeng.ru 81/B+, oldboybarbershop.com 64/C+, tbank.ru 58/C, wildberries.ru 42/D, discovery-system.ru 87/A−. Средний score 66.4 (C+)
+- `examples/geo-battle-2026-09-16.md` — метод, таблица результатов, измерения intelligence по каждому сайту, 4 валидных паттерна рынка РФ
+- README: таблица баттлтеста заменена на новый прогон (предыдущие артефакты сохранены)
+
 ## v1.3.0 — 2026-09-10
 
 - 7 AI search engine spec sheets: ChatGPT, Perplexity, Claude, Google AI Overviews, Gemini, Grok, Copilot — citation mechanics, crawler names, optimization priorities
