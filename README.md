@@ -47,6 +47,7 @@ Final Score = 50% Foundational (92 rules) + 50% Intelligence (6 dimensions)
 
 Real audit reports shipped with this skill — see [`examples/`](./examples/):
 
+- [`competition-ecommerce-2026-09-17.md`](./examples/competition-ecommerce-2026-09-17.md) — конкурентный баттлтест e-commerce РФ 17.09.2026: 5 конкурентов одной отрасли, таблица лидеров, паттерны сегмента
 - [`geo-battle-2026-09-16.md`](./examples/geo-battle-2026-09-16.md) — баттлтест 5 сайтов РФ 16.09.2026: метод, таблица scores, 4 паттерна рынка
 - `geo-battle-report.html` — rendered battle report (предыдущий прогон)
 - `geo-battle-results.json` — structured results (предыдущий прогон)
@@ -86,6 +87,22 @@ See [CHANGELOG.md](./CHANGELOG.md).
 
 > Полный баттлтест с методом, измерениями intelligence по каждому сайту и разбором паттернов: [`examples/geo-battle-2026-09-16.md`](./examples/geo-battle-2026-09-16.md)
 > Артефакты прошлого прогона: [`examples/geo-battle-results.json`](./examples/geo-battle-results.json) · [`examples/geo-battle-report.html`](./examples/geo-battle-report.html)
+
+## Конкурентный баттлтест e-commerce (17.09.2026)
+
+**5 e-commerce РФ одной отрасли, сравнительный прогон по модели `50% foundational + 50% intelligence`:**
+
+| Сайт | HTML (B) | JSON-LD | llms | robots | Score | Grade | Главный gap |
+|---|---|---|---|---|---|---|---|
+| vkusvill.ru | 421 351 | 2 (Organization/GroceryStore, WebSite, OfferCatalog) | ✅ 5 365 | ✅ +sitemap | **68** | C | нет FAQ/answer-блоков и дат |
+| market.yandex.ru | 2 057 102 | 1 (WebSite) | 404 | ✅ +sitemap | **52** | F | 0 heading'ов H1-H6, нет meta/OG |
+| detmir.ru | 2 250 068 | 0 | 404 | ✅ без sitemap | **51** | F | 0 JSON-LD, sitemap не прописан |
+| citilink.ru | 1 011 427 | 0 | 404 | ✅ +sitemap | **34** | F | 0 JSON-LD, нет H1, 812 слов текста |
+| holodilnik.ru | 565 569 | 1 (Organization) | 404 | ✅ +sitemap | **23** | F | 189 слов видимого текста, битый title |
+
+**Средний score сегмента: 45.6 (F)** — e-commerce РФ отстаёт от среднего рынка (66.4) на ~21 пункт. **Лидер сегмента — vkusvill.ru**: единственный с валидным llms.txt и полным мета-набором; побеждает структура, а не трафик.
+
+Закрытые для curl (зафиксировано): ozon.ru (307-loop), wildberries.ru (498 JS-shell), megamarket.ru / lamoda.ru (403), dns-shop.ru (401) — защита от ботов блокирует и AI-краулеров. Полный отчёт: [`examples/competition-ecommerce-2026-09-17.md`](./examples/competition-ecommerce-2026-09-17.md)
 
 **Бесплатный аудит вашего сайта →** [t.me/discoverysystem](https://t.me/discoverysystem) · [discovery-system.ru](https://discovery-system.ru)
 
